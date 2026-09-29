@@ -1,19 +1,31 @@
+import Categories from "@/components/shared/categories"
+import Container from "@/components/shared/container"
+import Filters from "@/components/shared/filters"
+import Header from "@/components/shared/header"
+import SortPopup from "@/components/shared/sort-popup"
+import Title from "@/components/shared/title"
+import TopBar from "@/components/shared/top-bar"
 import { Button } from "@/components/ui/button"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+    <>
+      <Container className="mt-10">
+        <Title text="Все пиццы" size="lg" className="font-semibold" />
+        <TopBar />
+      </Container>
+
+      <Container className="pb-14">
+        <div className="flex gap-[60px]">
+          <div className="w-[250px]">
+            <Filters/>
+
+          </div>
+          <div className="flex flex-col gap-16">
+          </div>
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+
+      </Container>
+    </>
   )
 }
