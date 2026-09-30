@@ -1,0 +1,70 @@
+{
+  "Пицца": [
+    {
+      "id": "honey_turkey",
+      "name": "Медовая индейка",
+      "description": "Запечённая индейка, горгонзола, грецкие орехи, руккола, мёд, моцарелла",
+      "price": 449,
+      "category": "premium",
+      "spicy": false,
+      "vegetarian": false,
+      "image": "honey_turkey.png",
+      "ingredients": ["turkey", "gorgonzola", "walnuts", "arugula", "honey", "mozzarella"]
+    },
+    {
+      "id": "sea_breeze",
+      "name": "Морской бриз",
+      "description": "Креветки, кольца кальмара, томаты черри, чесночный соус, моцарелла, базилик",
+      "price": 499,
+      "category": "seafood",
+      "spicy": false,
+      "vegetarian": false,
+      "image": "sea_breeze.png",
+      "ingredients": ["shrimp", "squid", "cherry_tomatoes", "garlic_sauce", "mozzarella", "basil"]
+    },
+    {
+      "id": "forest_meadow",
+      "name": "Лесная поляна",
+      "description": "Белые грибы, лисички, шиитаке, трюфельное масло, пармезан, тимьян, моцарелла",
+      "price": 479,
+      "category": "vegetarian",
+      "spicy": false,
+      "vegetarian": true,
+      "image": "forest_meadow.png",
+      "ingredients": ["porcini", "chanterelles", "shiitake", "truffle_oil", "parmesan", "thyme", "mozzarella"]
+    },
+    {
+      "id": "fire_dragon",
+      "name": "Огненный дракон",
+      "description": "Острая курица гриль, халапеньо, манго, красный лук, соус шрирача, моцарелла",
+      "price": 459,
+      "category": "spicy",
+      "spicy": true,
+      "vegetarian": false,
+      "image": "fire_dragon.png",
+      "ingredients": ["spicy_chicken", "jalapeno", "mango", "red_onion", "sriracha", "mozzarella"]
+    },
+    {
+      "id": "tuscan_sun",
+      "name": "Тосканское солнце",
+      "description": "Вяленые томаты, прошутто, руккола, пармезан, моцарелла, оливковое масло",
+      "price": 489,
+      "category": "premium",
+      "spicy": false,
+      "vegetarian": false,
+      "image": "tuscan_sun.png",
+      "ingredients": ["sun_dried_tomatoes", "prosciutto", "arugula", "parmesan", "mozzarella", "olive_oil"]
+    },
+    {
+      "id": "siberian_hunt",
+      "name": "Сибирская охота",
+      "description": "Оленина, копчёный сыр, маринованные огурцы, красный лук, соус BBQ, моцарелла",
+      "price": 469,
+      "category": "meat",
+      "spicy": false,
+      "vegetarian": false,
+      "image": "siberian_hunt.png",
+      "ingredients": ["venison", "smoked_cheese", "pickled_cucumbers", "red_onion", "bbq_sauce", "mozzarella"]
+    }
+  ]
+}

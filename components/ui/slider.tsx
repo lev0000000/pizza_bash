@@ -2,29 +2,27 @@ import { Slider as SliderPrimitive } from "@base-ui/react/slider"
 import { cn } from "cn"
 
 function Slider({
+  text,
   className,
   value,
   min = 0,
   max = 100,
   ...props
 }: SliderPrimitive.Root.Props) {
-  const _values = Array.isArray(value)
-    ? value
-    : [min, max]
+  const _values = Array.isArray(value) ? value : [min, max]
 
-      
   return (
     <SliderPrimitive.Root
       className={cn("data-horizontal:w-full data-vertical:h-full", className)}
+      text={text}
       data-slot="slider"
       value={value}
       min={min}
       max={max}
       thumbAlignment="edge"
       {...props}
-
     >
-      <span className="pb-5">{min}</span>
+      <span className="">{text}</span>
       <SliderPrimitive.Control className="relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col">
         <SliderPrimitive.Track
           data-slot="slider-track"
@@ -43,7 +41,10 @@ function Slider({
           />
         ))}
       </SliderPrimitive.Control>
-      <span className="pt-10">{max}</span>
+      <div className="flex justify-between mt-2">
+        <span className="">{_values[0]}</span>
+        <span className="">{max}</span>
+      </div>
     </SliderPrimitive.Root>
   )
 }
