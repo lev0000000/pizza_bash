@@ -1,32 +1,18 @@
-"use client"
 import React from "react"
 import ProductCard from "./product-card"
 import Title from "./title"
-import { useIntersection } from "react-use"
-import { useCategoryStore } from "@/store/category"
 
 type Props = {
   values: any[]
-  cat: string
+  cat: any[]
 }
 
 function ProductList({ values, cat }: Props) {
-  const setActive = useCategoryStore((state) => state.setActive)
-  const intersectionRef = React.useRef(null)
-  const intersection = useIntersection(intersectionRef, {
-    threshold: 0.4,
-  })
-
-  React.useEffect(() => {
-    if (intersection?.isIntersecting) {
-      setActive(cat)
-    }
-  }, [intersection?.isIntersecting])
-
+  const category = cat
   return (
-    <div className="flex flex-wrap gap-[50px]" ref={intersectionRef}>
-      <Title text={cat} className="w-full" />
-      <div className="grid grid-cols-3 gap-4">
+    <div className="">
+      <Title text={Object.keys(category)} className="mb-5" />
+      <div className="flex flex-wrap gap-[50px]">
         {values.map((item, index) => (
           <ProductCard
             id={item.id}

@@ -26,7 +26,7 @@ function ProductCard({
     <div className={''}>
         <Link className={'flex flex-col justify-between w-[325px] min-h-[430px]'} href={`/product/${id}`}>
         <div className="bg-primary-foreground flex justify-center p-6 rounded-lg h-100" style={{maxHeight: 240, maxWidth:285}}>
-            <img src={image || '/undefined.png'} alt="" width={311} height={251}/>
+            <Image src={`/${image}`} alt="" width={311} height={251}/>
         </div>
         <Title text={name}></Title>
         <p>{desc}</p>
