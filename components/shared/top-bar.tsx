@@ -11,7 +11,7 @@ function TopBar({ className }: Props) {
   return (
     <div
       className={cn(
-        " flex flex-row iteflex flex-row items-center justify-between bg-white py-3 rounded-xl shadow-mdms-center justify-between bg-white py-3 ",
+        "sticky top-0 z-10 flex flex-col items-center flex-row justify-between bg-white py-3 shadow-lg shadow-black/5",
         className
       )}
     >
