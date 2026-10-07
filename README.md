@@ -1,3 +1,6 @@
+<img width="1731" height="1230" alt="image" src="https://github.com/user-attachments/assets/4901ce67-d37b-4b85-9b08-5f73d585d1f1" /><img width="1731" height="1230" alt="image" src="https://github.com/user-attachments/assets/32375cc7-e6c9-497c-93dc-3372ef77b550" />
+Проект на NextJS, с Prisma Vercel ДБ
+
 # Next.js template
 
 This is a Next.js template with shadcn/ui.
